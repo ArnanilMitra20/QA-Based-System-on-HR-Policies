@@ -1,4 +1,168 @@
 {
   "sector": "Aerospace",
-  "hr_policy_data": "```json\n{\n  \"Aerospace HR Policy & Practices Document\": {\n    \"1. Company Overview\": {\n      \"Company Name\": \"Stratos Aerospace Technologies\",\n      \"Size\": \"500 Employees\",\n      \"Location\": \"Denver, Colorado, USA\",\n      \"Industry\": \"Aerospace Engineering and Manufacturing\",\n      \"Description\": \"Stratos Aerospace Technologies is a leading provider of advanced aerospace components and engineering solutions. We specialize in the design, development, and manufacturing of high-performance aircraft parts, satellite components, and related technologies. Our mission is to push the boundaries of aerospace innovation and provide our customers with reliable, cutting-edge solutions.\"\n    },\n    \"2. Lead HR Contact\": {\n      \"Name\": \"Jane Doe\",\n      \"Designation\": \"Vice President of Human Resources\",\n      \"Role\": \"Responsible for leading all HR functions, including recruitment, onboarding, training, performance management, compensation, benefits, employee relations, and compliance. Serves as a strategic partner to the executive team and provides guidance on all HR-related matters.\",\n      \"Contact Information\": {\n        \"Email\": \"jane.doe@stratos.com\",\n        \"Phone\": \"(555) 123-4567\"\n      }\n    },\n    \"3. Recruitment Strategy\": {\n      \"Channels\": [\n        \"LinkedIn (Recruiter License)\",\n        \"Indeed.com\",\n        \"Company Website (Careers Page)\",\n        \"Industry-Specific Job Boards (e.g., Aviation Week)\",\n        \"University Partnerships (Recruiting Events at Engineering Schools)\",\n        \"Employee Referral Program (with bonuses)\",\n        \"Professional Aerospace Conferences & Trade Shows\"\n      ],\n      \"Diversity Hiring\": {\n        \"Statement\": \"Stratos Aerospace Technologies is committed to building a diverse and inclusive workforce. We actively seek candidates from underrepresented groups in the aerospace industry, including women, minorities, veterans, and individuals with disabilities.\",\n        \"Initiatives\": [\n          \"Partnerships with organizations focused on promoting diversity in STEM fields (e.g., Society of Women Engineers, National Society of Black Engineers)\",\n          \"Blind resume screening to minimize unconscious bias\",\n          \"Diverse interview panels\",\n          \"Targeted outreach to universities with diverse student populations\",\n          \"Tracking diversity metrics throughout the recruitment process\"\n        ],\n        \"KPIs\": [\n          \"Percentage of female employees in engineering roles\",\n          \"Percentage of minority employees in leadership positions\",\n          \"Increase in applications from underrepresented groups year-over-year\"\n        ]\n      },\n      \"Tech Tools\": [\n        \"Applicant Tracking System (ATS): Greenhouse\",\n        \"AI-Powered Resume Screening: Textio\",\n        \"Video Interview Platform: HireVue\",\n        \"Skills Assessment Platforms: SHL, HackerRank (for technical roles)\",\n        \"Social Media Recruiting Tools: LinkedIn Talent Insights\"\n      ],\n      \"Sub-Policies\": {\n        \"Employee Referral Policy\": {\n          \"Eligibility\": \"All employees are eligible to participate in the employee referral program, except for HR personnel involved in the recruitment process.\",\n          \"Bonus Amount\": \"$1,000 - $5,000 depending on the position's seniority and difficulty to fill.\",\n          \"Payment Schedule\": \"50% upon the referred candidate's successful completion of their probationary period (90 days), 50% after one year of employment.\"\n        }\n      },\n      \"KPIs\": [\n        \"Time to fill (average): Target: 45 days\",\n        \"Cost per hire (average): Target: $5,000\",\n        \"Offer acceptance rate: Target: 90%\",\n        \"Source of hire (percentage from each channel)\",\n        \"Diversity metrics (as outlined above)\"\n      ]\n    },\n    \"4. Onboarding & Training\": {\n      \"Duration\": \"2 weeks (Formal Onboarding), Ongoing (Continuous Training)\",\n      \"Tools/Platforms\": [\n        \"Learning Management System (LMS): Cornerstone OnDemand\",\n        \"Internal Wiki/Knowledge Base\",\n        \"Onboarding Portal (with checklists and resources)\",\n        \"Virtual Meeting Platforms: Zoom, Microsoft Teams\",\n        \"3D Modeling and Simulation Software (Role-Specific)\",\n        \"Augmented Reality (AR) training modules for hands-on skills\"\n      ],\n      \"Mentorship\": {\n        \"Program Description\": \"Each new employee is paired with a mentor (an experienced employee in a similar role) for the first 6 months. The mentor provides guidance, support, and helps the new employee integrate into the company culture.\",\n        \"Mentor Training\": \"Mentors receive training on effective mentoring techniques and communication skills.\",\n        \"Mentoring Goals\": [\n          \"Increase new employee retention\",\n          \"Improve new employee performance\",\n          \"Promote knowledge sharing and collaboration\"\n        ]\n      },\n      \"Onboarding Schedule Example (Week 1)\": [\n        \"Day 1: Company Overview, HR Policies, IT Setup, Department Introduction\",\n        \"Day 2: Safety Training, Compliance Training, Security Protocols\",\n        \"Day 3: Role-Specific Training, Software Training, Team Meetings\",\n        \"Day 4: Meeting with Mentor, Goal Setting, Performance Expectations\",\n        \"Day 5: Company Culture Immersion, Team Building Activity, Q&A Session\"\n      ],\n      \"KPIs\": [\n        \"New hire retention rate (after 1 year): Target: 90%\",\n        \"New hire satisfaction score (measured through onboarding surveys): Target: 4.5/5\",\n        \"Time to productivity (percentage of new hires meeting performance goals within 3 months): Target: 80%\",\n        \"Completion rate of mandatory training modules: Target: 100%\"\n      ]\n    },\n    \"5. Performance Management\": {\n      \"Appraisal Frequency\": \"Annual Performance Reviews, Quarterly Check-ins\",\n      \"Review Criteria\": [\n        \"Job-Specific Performance Goals (aligned with company objectives)\",\n        \"Technical Skills Proficiency\",\n        \"Problem-Solving Abilities\",\n        \"Communication and Collaboration Skills\",\n        \"Adherence to Safety Protocols\",\n        \"Innovation and Creativity\",\n        \"Leadership Potential (for leadership roles)\"\n      ],\n      \"Feedback Loops\": [\n        \"360-Degree Feedback (for managers and leadership roles)\",\n        \"Regular One-on-One Meetings with Managers\",\n        \"Anonymous Employee Surveys\",\n        \"Performance Improvement Plans (for employees not meeting expectations)\"\n      ],\n      \"Performance Rating Scale\": [\n        \"Exceeds Expectations\",\n        \"Meets Expectations\",\n        \"Needs Improvement\",\n        \"Unsatisfactory\"\n      ],\n      \"KPIs\": [\n        \"Percentage of employees receiving performance reviews on time: Target: 100%\",\n        \"Distribution of performance ratings (to ensure fair and consistent evaluation)\",\n        \"Employee satisfaction with the performance management process (measured through surveys): Target: 4/5\",\n        \"Correlation between performance ratings and employee compensation\",\n        \"Improvement in performance metrics for employees on Performance Improvement Plans\"\n      ]\n    },\n    \"6. Remote/Flexible Work Policy\": {\n      \"Eligibility\": \"Determined by role and performance. Some roles (e.g., manufacturing, lab work) may not be eligible for remote work. Eligibility is reviewed annually.\",\n      \"Expectations\": [\n        \"Maintain a professional and productive work environment at home.\",\n        \"Adhere to established work hours and deadlines.\",\n        \"Be responsive to communication from colleagues and clients.\",\n        \"Attend virtual meetings and company events.\",\n        \"Maintain confidentiality of company information.\",\n        \"Ensure a secure and reliable internet connection.\"\n      ],\n      \"Tools Used\": [\n        \"Microsoft Teams\",\n        \"Zoom\",\n        \"Slack\",\n        \"VPN (for secure access to company network)\",\n        \"Project Management Software: Asana, Jira\"\n      ],\n      \"Sub-Policies\": {\n        \"Home Office Setup Reimbursement\": \"Employees eligible for remote work may be reimbursed up to $500 for the purchase of essential home office equipment (e.g., desk, chair, monitor).\",\n        \"Flex Time Policy\": \"Employees may adjust their start and end times by up to 2 hours, with manager approval, to accommodate personal needs.\"\n      },\n      \"KPIs\": [\n        \"Employee satisfaction with remote work options (measured through surveys): Target: 4/5\",\n        \"Impact of remote work on productivity (measured by comparing performance metrics of remote and in-office employees)\",\n        \"Employee retention rate among remote workers\",\n        \"Utilization of remote work tools and resources\"\n      ]\n    },\n    \"7. Employee Wellness & Mental Health\": {\n      \"Initiatives\": [\n        \"Employee Assistance Program (EAP): Confidential counseling and support services for employees and their families.\",\n        \"Wellness Programs: Fitness challenges, health screenings, smoking cessation programs, nutrition workshops.\",\n        \"Mental Health Training: Workshops for managers and employees on recognizing and addressing mental health issues.\",\n        \"Mindfulness and Meditation Programs\",\n        \"Ergonomic Assessments: To ensure a comfortable and safe work environment.\",\n        \"On-site Gym or Gym Membership Discounts\",\n        \"Financial Wellness Workshops\"\n      ],\n      \"Leave Policies\": [\n        \"Paid Time Off (PTO): Generous PTO policy that increases with tenure.\","
+  "generated_hr_data": {
+    "company_overview": {
+      "name": "Stellaris Aerospace Corp.",
+      "size": "5000+",
+      "location": "Houston, Texas"
+    },
+    "lead_hr_contact": {
+      "name": "Dr. Anya Sharma",
+      "designation": "Chief People Officer",
+      "role": "Strategic HR Leadership"
+    },
+    "recruitment_strategy": {
+      "channels": [
+        "LinkedIn",
+        "Industry-specific job boards (e.g., AviationWeek)",
+        "University partnerships (MIT, Caltech)",
+        "Employee referrals",
+        "Aerospace trade shows"
+      ],
+      "diversity_hiring": "Actively source candidates from underrepresented groups through partnerships with organizations like NSBE, SHPE, and SWE. Track diversity metrics throughout the hiring process and adjust strategies as needed.",
+      "tools_used": [
+        "Greenhouse",
+        "LinkedIn Recruiter",
+        "Indeed",
+        "AI-powered screening tools (e.g., HireVue)",
+        "Background check services"
+      ]
+    },
+    "onboarding_and_training": {
+      "duration": "90 days",
+      "platforms": [
+        "Cornerstone OnDemand",
+        "Internal LMS (Stellaris Academy)",
+        "Virtual reality simulations for specific roles",
+        "On-the-job training"
+      ],
+      "mentorship_program": "All new hires are paired with experienced employees for guidance and support during their first year. Mentors receive training on effective mentoring practices and are provided with resources to support their mentees."
+    },
+    "performance_management": {
+      "appraisal_frequency": "Annual performance reviews with quarterly check-ins",
+      "criteria": [
+        "Technical proficiency",
+        "Project delivery",
+        "Innovation",
+        "Teamwork",
+        "Adherence to safety regulations",
+        "Leadership potential (for managerial roles)"
+      ],
+      "feedback_loops": "360-degree feedback from peers, managers, and direct reports. Continuous feedback through regular one-on-ones and project retrospectives. Use of performance management software to track goals and progress."
+    },
+    "remote_flexible_work_policy": {
+      "eligibility": "Certain roles (e.g., software engineers, data analysts, marketing) are eligible for remote or hybrid work arrangements. Eligibility is determined by manager approval and based on the needs of the team and the ability to perform job duties effectively remotely.",
+      "expectations": "Employees working remotely are expected to maintain a dedicated workspace, adhere to core working hours, be responsive to communication, and attend in-person meetings as required. Performance is measured based on output and results, not physical presence.",
+      "tools_used": [
+        "Slack",
+        "Microsoft Teams",
+        "Zoom",
+        "VPN",
+        "Remote desktop software"
+      ]
+    },
+    "employee_wellness_and_mental_health": {
+      "initiatives": [
+        "Employee Assistance Program (EAP)",
+        "Mental health counseling",
+        "Wellness workshops (stress management, mindfulness)",
+        "Ergonomic assessments",
+        "On-site fitness center",
+        "Subsidized gym memberships"
+      ],
+      "leave_policies": "Generous paid time off (PTO), including vacation, sick leave, and personal days. Parental leave for both parents. Bereavement leave. Short-term and long-term disability insurance.",
+      "burnout_prevention": "Encourage employees to take regular breaks and vacations. Promote a culture of work-life balance. Provide training on time management and stress reduction techniques. Monitor workload and provide support to employees who are experiencing burnout."
+    },
+    "dei": {
+      "goals": [
+        "Increase representation of women and underrepresented minorities in leadership positions by 25% by 2025.",
+        "Achieve pay equity across all genders and ethnicities.",
+        "Foster a more inclusive and welcoming work environment for all employees."
+      ],
+      "programs": [
+        "Employee Resource Groups (ERGs) for women, LGBTQ+ employees, and employees of color.",
+        "DEI training for all employees.",
+        "Mentorship programs for underrepresented groups.",
+        "Partnerships with organizations that support diversity and inclusion."
+      ],
+      "cultural_sensitivity": "Mandatory cultural sensitivity training for all employees. Promote understanding and respect for diverse cultures and backgrounds. Encourage employees to learn about different cultures and perspectives."
+    },
+    "learning_and_development": {
+      "career_growth": "Provide opportunities for employees to advance within the company through promotions and lateral moves. Offer career counseling and development planning. Support employees in pursuing further education and training.",
+      "upskilling": [
+        "Technical skills training (e.g., software development, data analysis, engineering)",
+        "Leadership development programs",
+        "Project management training",
+        "Communication skills training"
+      ],
+      "certifications": [
+        "Project Management Professional (PMP)",
+        "Six Sigma",
+        "Certified Quality Engineer (CQE)",
+        "AWS Certified Solutions Architect",
+        "Security certifications (e.g., CISSP)"
+      ]
+    },
+    "technology_in_hr": {
+      "hris_tools": [
+        "Workday",
+        "BambooHR",
+        "Oracle HCM Cloud"
+      ],
+      "analytics_platforms": [
+        "Tableau",
+        "Power BI",
+        "Visier"
+      ]
+    },
+    "employee_engagement_programs": {
+      "events": [
+        "Company-wide town halls",
+        "Team-building activities",
+        "Holiday parties",
+        "Volunteer opportunities",
+        "Industry conferences"
+      ],
+      "recognition_methods": [
+        "Employee of the month awards",
+        "Spot bonuses",
+        "Public acknowledgement of achievements",
+        "Service anniversary awards",
+        "Stock options"
+      ],
+      "surveys": "Annual employee engagement survey. Pulse surveys to gather feedback on specific initiatives or issues. Exit interviews to understand why employees are leaving."
+    },
+    "legal_compliance_and_ethics": {
+      "labor_laws": [
+        "Fair Labor Standards Act (FLSA)",
+        "Equal Employment Opportunity (EEO) laws",
+        "Occupational Safety and Health Act (OSHA)",
+        "National Labor Relations Act (NLRA)",
+        "ITAR (International Traffic in Arms Regulations)",
+        "EAR (Export Administration Regulations)"
+      ],
+      "anti_harassment_policy": "Zero-tolerance policy for harassment of any kind. Clear reporting procedures and prompt investigation of all complaints. Training on preventing harassment and discrimination.",
+      "grievance_redressal": "Formal grievance procedure for employees to address concerns or complaints. Mediation and arbitration options. Protection against retaliation for reporting concerns."
+    },
+    "compensation_and_benefits": {
+      "pay_bands": "Competitive salary ranges based on job role, experience, and location. Regular salary reviews to ensure fairness and competitiveness.",
+      "bonus_structure": "Performance-based bonuses tied to individual, team, and company performance. Profit-sharing plans. Stock options for eligible employees.",
+      "perks": [
+        "Comprehensive health insurance (medical, dental, vision)",
+        "Paid time off",
+        "401(k) with company match",
+        "Employee stock purchase plan",
+        "Tuition reimbursement",
+        "Relocation assistance",
+        "On-site cafeteria",
+        "Free snacks and drinks"
+      ]
+    },
+    "metrics_and_kpis": {
+      "attrition_rate": "Target attrition rate of less than 10% annually. Track reasons for attrition and implement strategies to improve employee retention.",
+      "offer_acceptance_rate": "Target offer acceptance rate of 90% or higher. Monitor candidate feedback and adjust compensation and benefits packages as needed.",
+      "engagement_score": "Target employee engagement score of 80% or higher. Use survey results to identify areas for improvement and implement initiatives to boost engagement."
+    },
+    "sector_specific_challenges_and_solutions": "The Aerospace sector faces unique challenges, including a highly competitive talent market, stringent regulatory requirements (ITAR, EAR), and the need for specialized skills and training. Solutions include investing in internal training programs, partnering with universities to develop talent pipelines, offering competitive compensation and benefits packages, and implementing robust compliance programs. Addressing cybersecurity threats and protecting intellectual property are also paramount."
+  }
 }

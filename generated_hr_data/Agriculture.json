@@ -1,4 +1,153 @@
 {
   "sector": "Agriculture",
-  "hr_policy_data": "```json\n{\n  \"Company Overview\": {\n    \"Company Name\": \"Golden Harvest Farms, Inc.\",\n    \"Size\": \"500 employees\",\n    \"Location\": \"Central Valley, California, USA\",\n    \"Industry\": \"Agriculture (Specialty Crop Production - Almonds)\",\n    \"Mission Statement\": \"To cultivate and harvest the highest quality almonds sustainably, providing value to our customers, employees, and community while respecting the environment.\"\n  },\n  \"Lead HR Contact\": {\n    \"Name\": \"Maria Rodriguez\",\n    \"Designation\": \"Director of Human Resources\",\n    \"Role\": \"Oversees all HR functions, including recruitment, onboarding, performance management, compensation, benefits, employee relations, and compliance.  Serves as a strategic partner to senior management on all people-related matters.\",\n    \"Contact Information\": {\n      \"Email\": \"maria.rodriguez@goldenharvestfarms.com\",\n      \"Phone\": \"559-555-1212\"\n    }\n  },\n  \"Recruitment Strategy\": {\n    \"Overview\": \"Golden Harvest Farms is committed to attracting and retaining a diverse and talented workforce. Our recruitment strategy focuses on building strong relationships with local communities, educational institutions, and industry organizations.\",\n    \"Recruitment Channels\": [\n      \"Online Job Boards (Indeed, LinkedIn, CareerBuilder)\",\n      \"Company Website Career Page\",\n      \"Local Agricultural Colleges and Universities (e.g., Fresno State, UC Davis)\",\n      \"Community Job Fairs\",\n      \"Employee Referral Program (with bonus incentives)\",\n      \"Partnerships with Agricultural Associations (e.g., Almond Board of California)\",\n      \"Social Media (LinkedIn, Facebook - targeted advertising)\"\n    ],\n    \"Diversity Hiring Initiatives\": [\n      \"Targeted outreach to minority-serving institutions and organizations.\",\n      \"Blind resume screening to minimize unconscious bias.\",\n      \"Diverse interview panels.\",\n      \"Partnerships with organizations that support underrepresented groups in agriculture (e.g., women in agriculture organizations).\",\n      \"Tracking diversity metrics throughout the recruitment process.\",\n      \"Specific goals for hiring underrepresented groups in key roles (e.g., women in leadership positions).\"\n    ],\n    \"Tech Tools Used\": [\n      \"Applicant Tracking System (ATS): Greenhouse (for managing applications, tracking candidates, and automating workflows)\",\n      \"AI-powered sourcing tools: SeekOut (for identifying and engaging passive candidates)\",\n      \"Video Interviewing Platform: HireVue (for initial screening interviews)\",\n      \"Background Check Software: Checkr (for compliance and security)\",\n      \"Social Media Recruiting platforms\"\n    ],\n    \"Measurable KPIs\": [\n      \"Time-to-fill (Target: 45 days)\",\n      \"Cost-per-hire (Target: Below industry average)\",\n      \"Offer acceptance rate (Target: 90%)\",\n      \"Diversity of applicant pool (Tracked by gender, ethnicity, and other relevant demographics)\",\n      \"Retention rate of new hires after 1 year (Target: 85%)\"\n    ],\n    \"Sub-Policies\": {\n      \"Employee Referral Program\": {\n        \"Eligibility\": \"All employees in good standing are eligible to participate.\",\n        \"Incentive\": \"$500 bonus for successful referrals (paid upon completion of the referred employee's 90-day probationary period).\",\n        \"Process\": \"Referrals must be submitted through the HR department using the designated form.\"\n      }\n    }\n  },\n  \"Onboarding & Training\": {\n    \"Overview\": \"A comprehensive onboarding program is crucial for ensuring new hires are well-equipped to succeed at Golden Harvest Farms. Our program focuses on company culture, job-specific skills, and safety procedures.\",\n    \"Duration\": \"1 week (initial orientation) + ongoing training throughout the first year\",\n    \"Onboarding Process\": [\n      \"Day 1: Welcome, HR paperwork, company overview, introduction to team.\",\n      \"Days 2-3: Job-specific training (field operations, equipment operation, quality control, etc.).\",\n      \"Day 4: Safety training (OSHA compliance, hazard identification, emergency procedures).\",\n      \"Day 5: Company culture and values, team building activities, introduction to mentorship program.\",\n      \"Week 2-4: Shadowing experienced employees, hands-on training in the field, ongoing feedback.\"\n    ],\n    \"Tools/Platforms\": [\n      \"Learning Management System (LMS): TalentLMS (for delivering online training modules and tracking progress)\",\n      \"Digital Onboarding Platform: BambooHR (for streamlining HR paperwork and communication)\",\n      \"Company Intranet: SharePoint (for accessing company policies, procedures, and resources)\",\n      \"Field Training Manuals (available in English and Spanish)\",\n      \"Hands-on training with experienced team members\"\n    ],\n    \"Mentorship Program\": {\n      \"Overview\": \"Each new employee is paired with an experienced employee who serves as a mentor during their first year.\",\n      \"Mentor Responsibilities\": [\n        \"Provide guidance and support to the new employee.\",\n        \"Answer questions and address concerns.\",\n        \"Introduce the new employee to key contacts within the company.\",\n        \"Provide feedback on performance.\",\n        \"Help the new employee integrate into the company culture.\"\n      ],\n      \"Frequency of Mentorship Meetings\": \"Weekly for the first month, bi-weekly for the next three months, and monthly thereafter.\"\n    },\n    \"Measurable KPIs\": [\n      \"New hire satisfaction score (measured via survey after 30 days and 90 days)\",\n      \"Time to proficiency (Target: 3 months)\",\n      \"Completion rate of onboarding modules (Target: 100%)\",\n      \"Retention rate of new hires after 1 year (Target: 85%)\",\n      \"Mentor participation rate (Target: 90%)\"\n    ],\n    \"Sub-Policies\": {\n      \"Safety Training Policy\": {\n        \"Frequency\": \"Annual mandatory safety training for all employees.\",\n        \"Content\": \"Covers topics such as hazard identification, safe equipment operation, emergency procedures, and OSHA compliance.\",\n        \"Documentation\": \"All training sessions are documented, and employee certifications are tracked.\"\n      }\n    }\n  },\n  \"Performance Management\": {\n    \"Overview\": \"Our performance management system is designed to provide employees with regular feedback, identify areas for improvement, and recognize outstanding contributions.\",\n    \"Appraisal Frequency\": \"Annual performance reviews, with quarterly check-ins.\",\n    \"Review Criteria\": [\n      \"Job-specific performance goals (aligned with company objectives)\",\n      \"Quality of work\",\n      \"Productivity\",\n      \"Teamwork and collaboration\",\n      \"Adherence to safety procedures\",\n      \"Problem-solving skills\",\n      \"Attendance and punctuality\",\n      \"Initiative and innovation\"\n    ],\n    \"Feedback Loops\": [\n      \"Manager-employee one-on-one meetings (weekly/bi-weekly)\",\n      \"360-degree feedback (for leadership roles)\",\n      \"Self-assessment as part of the annual review process\",\n      \"Performance improvement plans (for addressing performance gaps)\",\n      \"Open-door policy for employees to discuss concerns with their managers or HR.\"\n    ],\n    \"Performance Improvement Plan (PIP) Policy\": {\n      \"Purpose\": \"To provide employees with a structured plan to improve performance and meet job expectations.\",\n      \"Process\": \"A PIP is developed in collaboration between the manager and the employee. It includes specific performance goals, timelines, and support resources.\",\n      \"Duration\": \"Typically 30-90 days.\",\n      \"Consequences\": \"Failure to meet the goals outlined in the PIP may result in further disciplinary action, up to and including termination.\"\n    },\n    \"Measurable KPIs\": [\n      \"Percentage of employees receiving performance reviews on time (Target: 100%)\",\n      \"Employee satisfaction with the performance review process (measured via survey)\",\n      \"Improvement in employee performance after receiving feedback (tracked through subsequent performance reviews)\",\n      \"Percentage of employees meeting or exceeding performance goals (Target: 80%)\",\n      \"Number of performance improvement plans implemented and their success rate (Target: 70% success rate)\"\n    ]\n  },\n  \"Remote/Flexible Work Policy\": {\n    \"Overview\": \"While many roles at Golden Harvest Farms require on-site presence, we recognize the value of flexibility where possible. This policy outlines the guidelines for remote and flexible work arrangements.\",\n    \"Eligibility\": \"Limited to specific roles within administrative, IT, and marketing departments.  Operational roles generally require on-site presence.\",\n    \"Expectations\": [\n      \"Employees working remotely must maintain a productive work environment free from distractions.\",\n      \"Availability during core business hours (8:00 AM - 5:00 PM PST).\",\n      \"Responsiveness to emails and phone calls.\",\n      \"Adherence to all company policies and procedures.\",\n      \"Participation in virtual meetings and team activities.\",\n      \"Maintaining confidentiality of company information.\",\n      \"Regular communication with their manager.\",\n      \"On-site presence may be required for specific meetings or projects.\"\n    ],\n    \"Tools Used\": [\n      \"Video conferencing: Zoom, Microsoft Teams\",\n      \"Collaboration platform: Microsoft Teams, Slack\",\n      \"Project management software: Asana, Trello\",\n      \"Secure VPN access to"
+  "generated_hr_data": {
+    "company_overview": {
+      "name": "Green Acres Farms",
+      "size": "500-1000 employees",
+      "location": "Central Valley, California"
+    },
+    "lead_hr_contact": {
+      "name": "Maria Rodriguez",
+      "designation": "HR Director",
+      "role": "Strategic HR Leadership"
+    },
+    "recruitment_strategy": {
+      "channels": [
+        "Industry-specific job boards",
+        "Local community colleges",
+        "Agricultural trade shows",
+        "Employee referrals"
+      ],
+      "diversity_hiring": "Actively partnering with organizations that support underrepresented groups in agriculture, targeting recruitment efforts to ensure a diverse candidate pool.",
+      "tools_used": [
+        "Applicant Tracking System (ATS)",
+        "LinkedIn Recruiter",
+        "Indeed",
+        "Skills assessment platforms"
+      ]
+    },
+    "onboarding_and_training": {
+      "duration": "2 weeks",
+      "platforms": [
+        "Online learning modules (e.g., Moodle)",
+        "On-the-job training with senior employees",
+        "Classroom-style sessions on safety and compliance"
+      ],
+      "mentorship_program": "Formal mentorship program pairing new hires with experienced employees for guidance and support during their first six months."
+    },
+    "performance_management": {
+      "appraisal_frequency": "Annually, with mid-year check-ins",
+      "criteria": [
+        "Crop yield and quality",
+        "Equipment maintenance",
+        "Teamwork and collaboration",
+        "Safety adherence",
+        "Problem-solving skills"
+      ],
+      "feedback_loops": "360-degree feedback, regular one-on-one meetings with supervisors, anonymous feedback surveys."
+    },
+    "remote_flexible_work_policy": {
+      "eligibility": "Primarily for administrative and managerial roles; field-based positions are generally not eligible.",
+      "expectations": "Clear communication, adherence to deadlines, availability during core business hours, participation in virtual meetings.",
+      "tools_used": [
+        "Microsoft Teams",
+        "Zoom",
+        "Project management software",
+        "Cloud-based document sharing"
+      ]
+    },
+    "employee_wellness_and_mental_health": {
+      "initiatives": [
+        "On-site wellness programs (e.g., yoga, fitness classes)",
+        "Employee Assistance Program (EAP) for confidential counseling",
+        "Financial wellness workshops",
+        "Seasonal flu shots"
+      ],
+      "leave_policies": "Generous sick leave, vacation time, and personal days; mental health days available; bereavement leave.",
+      "burnout_prevention": "Mandatory vacation policy, workload management training for supervisors, promotion of work-life balance."
+    },
+    "dei": {
+      "goals": [
+        "Increase representation of women and minorities in leadership positions",
+        "Foster an inclusive workplace culture where all employees feel valued and respected",
+        "Promote equitable access to opportunities and resources"
+      ],
+      "programs": [
+        "Diversity and inclusion training for all employees",
+        "Employee resource groups (ERGs) for various affinity groups",
+        "Mentorship programs for underrepresented groups"
+      ],
+      "cultural_sensitivity": "Mandatory training on cultural sensitivity and awareness, language access services for non-English speaking employees, celebration of diverse cultural holidays."
+    },
+    "learning_and_development": {
+      "career_growth": "Clear career paths with opportunities for advancement, internal promotion policy, succession planning program.",
+      "upskilling": [
+        "Equipment operation training",
+        "Pest management certification",
+        "Irrigation techniques",
+        "Data analysis for agricultural applications"
+      ],
+      "certifications": [
+        "Pesticide applicator license",
+        "Certified Crop Advisor (CCA)",
+        "Food Safety Modernization Act (FSMA) certification"
+      ]
+    },
+    "technology_in_hr": {
+      "hris_tools": [
+        "Workday",
+        "BambooHR",
+        "Paylocity"
+      ],
+      "analytics_platforms": [
+        "Tableau",
+        "Power BI",
+        "Google Analytics"
+      ]
+    },
+    "employee_engagement_programs": {
+      "events": [
+        "Company picnics",
+        "Harvest festivals",
+        "Team-building activities",
+        "Community volunteer days"
+      ],
+      "recognition_methods": [
+        "Employee of the month awards",
+        "Spot bonuses for exceptional performance",
+        "Public recognition in company newsletters",
+        "Years of service awards"
+      ],
+      "surveys": "Annual employee engagement survey, pulse surveys to gather feedback on specific issues."
+    },
+    "legal_compliance_and_ethics": {
+      "labor_laws": [
+        "Fair Labor Standards Act (FLSA)",
+        "Migrant and Seasonal Agricultural Worker Protection Act (MSPA)",
+        "Occupational Safety and Health Act (OSHA)",
+        "California Labor Code"
+      ],
+      "anti_harassment_policy": "Zero-tolerance policy on harassment of any kind, clear reporting procedures, prompt and thorough investigations.",
+      "grievance_redressal": "Formal grievance procedure with multiple channels for reporting concerns, mediation services available, protection against retaliation."
+    },
+    "compensation_and_benefits": {
+      "pay_bands": "Competitive pay based on experience, skills, and performance; regular salary reviews to ensure fair market value.",
+      "bonus_structure": "Performance-based bonuses for exceeding goals, profit-sharing program for all employees.",
+      "perks": [
+        "Health insurance (medical, dental, vision)",
+        "Paid time off",
+        "Retirement plan (401k) with company match",
+        "Life insurance",
+        "Disability insurance",
+        "Employee discounts on company products",
+        "Housing assistance for seasonal workers"
+      ]
+    },
+    "metrics_and_kpis": {
+      "attrition_rate": "Target attrition rate of less than 10%",
+      "offer_acceptance_rate": "Target offer acceptance rate of 90%",
+      "engagement_score": "Target employee engagement score of 75%."
+    },
+    "sector_specific_challenges_and_solutions": "Addressing labor shortages through targeted recruitment and automation; managing seasonal workforce fluctuations with flexible staffing solutions; ensuring worker safety in hazardous environments through comprehensive training and safety protocols; adapting to climate change with sustainable farming practices and water conservation measures; navigating complex regulatory requirements through compliance audits and legal counsel."
+  }
 }

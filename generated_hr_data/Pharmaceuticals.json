@@ -1,4 +1,150 @@
 {
   "sector": "Pharmaceuticals",
-  "hr_policy_data": "```json\n{\n  \"Pharmaceutical HR Policy & Practices\": {\n    \"1. Company Overview\": {\n      \"Company Name\": \"GeneSys Pharmaceuticals\",\n      \"Size\": \"500 Employees\",\n      \"Location\": \"Boston, Massachusetts (Headquarters) with satellite offices in San Diego, California and Basel, Switzerland.\",\n      \"Industry\": \"Pharmaceuticals - Research & Development, Manufacturing, and Distribution of innovative therapies.\",\n      \"Mission Statement\": \"To improve patient lives globally through the discovery, development, and commercialization of transformative medicines.\"\n    },\n    \"2. Lead HR Contact\": {\n      \"Name\": \"Dr. Anya Sharma, PhD\",\n      \"Designation\": \"Chief Human Resources Officer (CHRO)\",\n      \"Role\": \"Oversees all HR functions, including talent acquisition, employee relations, compensation & benefits, learning & development, and DEI initiatives. Responsible for developing and implementing HR strategies that align with the company's overall business goals.\"\n    },\n    \"3. Recruitment Strategy\": {\n      \"Overview\": \"GeneSys Pharmaceuticals is committed to attracting, developing, and retaining top talent in the pharmaceutical industry. Our recruitment strategy focuses on sourcing qualified candidates through diverse channels and promoting a fair and inclusive hiring process.\",\n      \"Channels\": [\n        \"Online Job Boards (LinkedIn, Indeed, Glassdoor, BioSpace)\",\n        \"Company Website (Careers Page)\",\n        \"University Recruiting (Targeting top universities with strong science and medical programs)\",\n        \"Professional Conferences (e.g., BIO International Convention, American Association of Pharmaceutical Scientists)\",\n        \"Employee Referral Program (Incentivized referrals from current employees)\",\n        \"Executive Search Firms (For senior leadership roles)\",\n        \"Partnerships with Diversity-Focused Organizations (e.g., National Society of Black Engineers, Society of Women Engineers)\"\n      ],\n      \"Diversity Hiring\": {\n        \"Policy\": \"GeneSys Pharmaceuticals is an equal opportunity employer and is committed to creating a diverse and inclusive workplace. We actively seek to recruit individuals from underrepresented groups in the pharmaceutical industry.\",\n        \"Practices\": [\n          \"Targeted outreach to diverse professional organizations and universities.\",\n          \"Diverse interview panels to mitigate unconscious bias.\",\n          \"Review of job descriptions to ensure inclusive language.\",\n          \"Tracking diversity metrics throughout the recruitment process.\",\n          \"Training for hiring managers on unconscious bias and inclusive hiring practices.\"\n        ],\n        \"KPIs\": [\n          \"Percentage of new hires from underrepresented groups.\",\n          \"Diversity representation across all job levels.\",\n          \"Candidate satisfaction with the fairness of the hiring process.\"\n        ]\n      },\n      \"Tech Tools\": [\n        \"Applicant Tracking System (ATS): Lever\",\n        \"AI-powered sourcing tools: Eightfold.ai\",\n        \"Video Interviewing Platform: HireVue\",\n        \"Skills Assessment Platform: HackerRank (for certain technical roles)\",\n        \"CRM for nurturing potential candidates\"\n      ],\n      \"Sub-Policy: Employee Referral Program\": {\n        \"Eligibility\": \"All full-time employees are eligible to participate in the Employee Referral Program, except for hiring managers involved in the referred candidate's hiring process.\",\n        \"Incentive\": \"Employees who refer a successful candidate (i.e., one who is hired and remains employed for at least 90 days) will receive a bonus of $5,000 (subject to applicable taxes).\",\n        \"Process\": \"Referrals must be submitted through the company's internal referral portal.\",\n        \"Terms & Conditions\": \"The company reserves the right to modify or terminate the Employee Referral Program at any time.\"\n      }\n    },\n    \"4. Onboarding & Training\": {\n      \"Duration\": \"90-day onboarding program with continuous learning opportunities throughout employment.\",\n      \"Tools/Platforms\": [\n        \"Learning Management System (LMS): Cornerstone OnDemand\",\n        \"Intranet: SharePoint\",\n        \"Collaboration Tools: Microsoft Teams, Slack\",\n        \"Virtual Reality (VR) training simulations for lab procedures and safety protocols (where applicable).\"\n      ],\n      \"Mentorship\": {\n        \"Program\": \"All new employees are paired with a mentor (a senior employee in their department) for the first 6 months of employment.  Mentors provide guidance, support, and act as a resource for navigating the company culture and processes.\",\n        \"Objectives\": [\n          \"Facilitate knowledge transfer and skill development.\",\n          \"Promote employee engagement and retention.\",\n          \"Develop leadership potential.\"\n        ],\n        \"KPIs\": [\n          \"Mentor/Mentee satisfaction scores.\",\n          \"Employee retention rate of mentored employees.\",\n          \"Promotion rate of mentored employees.\"\n        ]\n      },\n      \"Onboarding Process Steps\": [\n        \"Pre-boarding: Welcome package, introduction to the team, completion of required paperwork.\",\n        \"Day 1: Company overview, HR policies, IT setup, introductions to key stakeholders.\",\n        \"Week 1: Department-specific training, introduction to company values and culture.\",\n        \"Month 1-3: Role-specific training, mentorship meetings, performance goals setting.\",\n        \"Ongoing: Continuous learning opportunities, performance reviews, feedback sessions.\"\n      ],\n      \"Sub-Policy: GMP (Good Manufacturing Practice) Training\": {\n        \"Requirement\": \"All employees involved in the manufacturing process are required to complete GMP training.\",\n        \"Frequency\": \"Initial training upon hire and annual refresher training.\",\n        \"Content\": \"Covers topics such as contamination control, documentation practices, and quality control procedures.\",\n        \"Assessment\": \"Employees must pass a written exam to demonstrate their understanding of GMP principles.\",\n        \"Documentation\": \"Training records are maintained in accordance with regulatory requirements.\"\n      }\n    },\n    \"5. Performance Management\": {\n      \"Appraisal Frequency\": \"Annual performance appraisals with quarterly check-ins.\",\n      \"Review Criteria\": [\n        \"Achievement of individual and team goals.\",\n        \"Demonstration of company values.\",\n        \"Technical skills and knowledge.\",\n        \"Communication and collaboration skills.\",\n        \"Problem-solving and decision-making abilities.\",\n        \"Leadership potential (for leadership roles).\"\n      ],\n      \"Feedback Loops\": [\n        \"360-degree feedback (for leadership roles).\",\n        \"Regular one-on-one meetings between managers and employees.\",\n        \"Anonymous employee feedback surveys.\",\n        \"Performance improvement plans (for employees not meeting expectations).\"\n      ],\n      \"Rating Scale\": [\n        \"Exceeds Expectations\",\n        \"Meets Expectations\",\n        \"Needs Improvement\"\n      ],\n      \"Process\": [\n        \"Self-Assessment: Employee completes a self-assessment of their performance.\",\n        \"Manager Assessment: Manager completes an assessment of the employee's performance.\",\n        \"Performance Review Meeting: Manager and employee meet to discuss the assessments and set goals for the next review period.\",\n        \"Documentation: All assessments and goals are documented in the performance management system.\"\n      ],\n      \"KPIs\": [\n        \"Employee satisfaction with the performance management process.\",\n        \"Completion rate of performance appraisals.\",\n        \"Percentage of employees achieving their performance goals.\",\n        \"Employee retention rate (correlated with performance ratings).\"\n      ]\n    },\n    \"6. Remote/Flexible Work Policy\": {\n      \"Eligibility\": \"Eligibility for remote/flexible work arrangements is determined by job function, performance, and business needs. Certain roles requiring on-site presence (e.g., lab technicians, manufacturing personnel) may not be eligible.\",\n      \"Expectations\": [\n        \"Employees working remotely are expected to maintain a professional work environment and adhere to company policies.\",\n        \"Employees must be available during core business hours and responsive to communication.\",\n        \"Employees must ensure the security and confidentiality of company data.\",\n        \"Regular communication with team members and managers is essential.\",\n        \"Employees are responsible for providing their own internet access and ergonomic workspace.\",\n        \"Compliance with all relevant data privacy and security policies is mandatory.\"\n      ],\n      \"Tools Used\": [\n        \"Microsoft Teams\",\n        \"Zoom\",\n        \"Slack\",\n        \"VPN for secure access to company network.\",\n        \"Cloud-based collaboration platforms (e.g., Google Workspace, Microsoft 365)\"\n      ],\n      \"Approval Process\": \"Remote/flexible work arrangements must be approved by the employee's manager and HR department.\",\n      \"Trial Period\": \"New remote work arrangements may be subject to a trial period to assess effectiveness.\",\n      \"Sub-Policy: Equipment Policy for Remote Workers\": {\n        \"Company-Provided Equipment\": \"The company will provide a laptop, monitor, and other essential equipment for remote workers, as deemed necessary.\",\n        \"Employee Responsibility\": \"Employees are responsible for the care and maintenance of company-provided equipment.\",\n        \"Return of Equipment\": \"Upon termination of employment, all company-provided equipment must be returned to the company.\"\n      },\n      \"KPIs\": [\n        \"Employee satisfaction with remote work arrangements.\",\n        \"Productivity levels of remote workers.\",\n        \"Employee engagement scores of remote workers.\",\n        \"Retention rate of remote workers.\"\n      ]\n    },\n    \"7. Employee Wellness & Mental Health\": {\n      \"Initiatives\": [\n        \"Employee Assistance Program (EAP): Confidential counseling and support services for employees and their families.\",\n        \"Wellness Programs: Onsite fitness center, yoga classes, mindfulness workshops, health risk assessments.\",\n        \"Health Insurance: Comprehensive medical, dental, and vision insurance"
+  "generated_hr_data": {
+    "company_overview": {
+      "name": "NovaPharm Solutions",
+      "size": "500-1000 employees",
+      "location": "Princeton, NJ"
+    },
+    "lead_hr_contact": {
+      "name": "Dr. Eleanor Vance",
+      "designation": "VP, Human Resources",
+      "role": "Strategic HR Leadership"
+    },
+    "recruitment_strategy": {
+      "channels": [
+        "LinkedIn",
+        "Indeed",
+        "Pharmaceutical Job Boards",
+        "University Partnerships",
+        "Employee Referrals"
+      ],
+      "diversity_hiring": "Actively seek diverse candidates through partnerships with organizations focused on underrepresented groups in STEM and targeted outreach to diverse universities.",
+      "tools_used": [
+        "Applicant Tracking System (ATS)",
+        "Skills Assessments",
+        "Behavioral Interviewing"
+      ]
+    },
+    "onboarding_and_training": {
+      "duration": "3 months",
+      "platforms": [
+        "Internal LMS",
+        "External Training Providers (e.g., specialized pharmaceutical training)",
+        "On-the-Job Training"
+      ],
+      "mentorship_program": "Structured mentorship program pairing new hires with experienced employees for guidance and support."
+    },
+    "performance_management": {
+      "appraisal_frequency": "Annually, with mid-year check-ins",
+      "criteria": [
+        "Key Performance Indicators (KPIs)",
+        "Competency-Based Assessments",
+        "Project Deliverables",
+        "Adherence to Compliance Standards"
+      ],
+      "feedback_loops": "360-degree feedback, regular one-on-one meetings with managers, and anonymous employee surveys."
+    },
+    "remote_flexible_work_policy": {
+      "eligibility": "Based on role and performance; primarily for roles not requiring lab presence. Requires manager approval.",
+      "expectations": "Maintain consistent communication, meet deadlines, and adhere to data security protocols.",
+      "tools_used": [
+        "Microsoft Teams",
+        "Zoom",
+        "VPN",
+        "Cloud-based collaboration platforms"
+      ]
+    },
+    "employee_wellness_and_mental_health": {
+      "initiatives": [
+        "Employee Assistance Program (EAP)",
+        "Wellness Workshops (stress management, mindfulness)",
+        "On-site Fitness Center",
+        "Health Risk Assessments",
+        "Ergonomic Assessments"
+      ],
+      "leave_policies": "Generous sick leave, parental leave, and vacation time. Mental health days are encouraged.",
+      "burnout_prevention": "Mandatory vacation policy, workload management training for managers, and encouragement of work-life balance."
+    },
+    "dei": {
+      "goals": [
+        "Increase representation of underrepresented groups in leadership positions by 15% in 3 years.",
+        "Achieve pay equity across all genders and ethnicities.",
+        "Foster an inclusive culture where all employees feel valued and respected."
+      ],
+      "programs": [
+        "Diversity and Inclusion Training",
+        "Employee Resource Groups (ERGs)",
+        "Mentorship Programs for Underrepresented Groups",
+        "Unconscious Bias Training"
+      ],
+      "cultural_sensitivity": "Mandatory cultural sensitivity training for all employees, with ongoing education and awareness campaigns."
+    },
+    "learning_and_development": {
+      "career_growth": "Defined career paths, opportunities for advancement, and internal mobility program.",
+      "upskilling": [
+        "Technical Training",
+        "Leadership Development Programs",
+        "Project Management Training",
+        "Data Analytics Training"
+      ],
+      "certifications": [
+        "Good Manufacturing Practice (GMP) Certification",
+        "Project Management Professional (PMP)",
+        "Clinical Research Associate (CRA)"
+      ]
+    },
+    "technology_in_hr": {
+      "hris_tools": [
+        "Workday",
+        "ADP Workforce Now"
+      ],
+      "analytics_platforms": [
+        "Tableau",
+        "Power BI"
+      ]
+    },
+    "employee_engagement_programs": {
+      "events": [
+        "Company-wide Town Halls",
+        "Team-building activities",
+        "Holiday Parties",
+        "Wellness Challenges"
+      ],
+      "recognition_methods": [
+        "Employee of the Month Awards",
+        "Spot Bonuses",
+        "Public Recognition at Team Meetings",
+        "Long Service Awards"
+      ],
+      "surveys": "Regular employee engagement surveys (quarterly) to gather feedback and identify areas for improvement."
+    },
+    "legal_compliance_and_ethics": {
+      "labor_laws": [
+        "Fair Labor Standards Act (FLSA)",
+        "Equal Employment Opportunity (EEO) laws",
+        "Occupational Safety and Health Act (OSHA)",
+        "HIPAA"
+      ],
+      "anti_harassment_policy": "Zero-tolerance policy for harassment of any kind, with a clear reporting process and thorough investigation procedures.",
+      "grievance_redressal": "Formal grievance redressal process with multiple channels for employees to raise concerns and receive a fair hearing."
+    },
+    "compensation_and_benefits": {
+      "pay_bands": "Competitive pay bands based on market data and experience, regularly reviewed and adjusted.",
+      "bonus_structure": "Performance-based bonuses tied to individual and company goals, with clear and transparent criteria.",
+      "perks": [
+        "Comprehensive health insurance",
+        "401(k) with company match",
+        "Employee stock purchase plan",
+        "Paid time off for volunteering",
+        "Tuition reimbursement"
+      ]
+    },
+    "metrics_and_kpis": {
+      "attrition_rate": "Target: <10% annually",
+      "offer_acceptance_rate": "Target: >90%",
+      "engagement_score": "Target: >80% (based on employee surveys)"
+    },
+    "sector_specific_challenges_and_solutions": "Challenge: High competition for skilled scientists and researchers. Solution: Aggressive recruitment strategies, competitive compensation packages, and strong emphasis on employee development and retention. Challenge: Maintaining regulatory compliance. Solution: Robust training programs, dedicated compliance team, and regular audits."
+  }
 }

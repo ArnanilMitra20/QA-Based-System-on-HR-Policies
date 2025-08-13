@@ -1,4 +1,163 @@
 {
   "sector": "Construction",
-  "hr_policy_data": "```json\n{\n  \"HRPolicyAndPractices\": {\n    \"1. Company Overview\": {\n      \"CompanyName\": \"Stonewall Builders Inc.\",\n      \"CompanySize\": \"250 employees\",\n      \"CompanyLocation\": \"Austin, Texas\",\n      \"CompanyDescription\": \"Stonewall Builders Inc. is a leading construction company specializing in commercial and residential construction projects across Texas. We pride ourselves on our commitment to quality, safety, and innovation, and we foster a collaborative and supportive work environment for all employees.\"\n    },\n    \"2. Lead HR Contact\": {\n      \"Name\": \"Sarah Johnson\",\n      \"Designation\": \"HR Director\",\n      \"Role\": \"Oversees all HR functions, including recruitment, onboarding, training, performance management, compensation, benefits, and employee relations. Responsible for ensuring legal compliance and fostering a positive and inclusive work environment.\"\n    },\n    \"3. Recruitment Strategy\": {\n      \"PolicyName\": \"Recruitment and Selection Policy\",\n      \"PolicyStatement\": \"Stonewall Builders Inc. is committed to attracting, recruiting, and retaining a diverse and talented workforce. Our recruitment process is fair, transparent, and compliant with all applicable laws and regulations.\",\n      \"RecruitmentChannels\": [\n        \"Online job boards (Indeed, LinkedIn, Glassdoor)\",\n        \"Company website career page\",\n        \"Industry-specific job fairs and events\",\n        \"Partnerships with vocational schools and universities\",\n        \"Employee referral program (with incentives)\",\n        \"Social media (LinkedIn, Facebook)\",\n        \"Professional networking groups\"\n      ],\n      \"DiversityHiring\": {\n        \"Statement\": \"We actively seek to increase the representation of underrepresented groups in our workforce. We are an Equal Opportunity Employer and do not discriminate based on race, color, religion, sex, national origin, age, disability, or any other protected characteristic.\",\n        \"Strategies\": [\n          \"Targeted recruitment efforts at historically Black colleges and universities (HBCUs) and other minority-serving institutions.\",\n          \"Partnerships with organizations that support underrepresented groups in the construction industry.\",\n          \"Blind resume screening to reduce unconscious bias.\",\n          \"Inclusive interview panels with diverse representation.\",\n          \"Tracking diversity metrics throughout the recruitment process.\"\n        ]\n      },\n      \"TechToolsUsed\": [\n        \"Applicant Tracking System (ATS): Greenhouse\",\n        \"Video interviewing platform: HireVue\",\n        \"Background check software: Checkr\",\n        \"Skills assessment platform: Criteria Corp\"\n      ],\n      \"KPIs\": [\n        \"Time to fill (target: <45 days)\",\n        \"Cost per hire (target: reduce by 10% annually)\",\n        \"Offer acceptance rate (target: >85%)\",\n        \"Diversity representation (track percentage of hires from underrepresented groups)\",\n        \"Employee referral rate (target: increase by 5% annually)\"\n      ]\n    },\n    \"4. Onboarding & Training\": {\n      \"PolicyName\": \"Onboarding and Training Policy\",\n      \"PolicyStatement\": \"Stonewall Builders Inc. provides a comprehensive onboarding and training program to ensure new employees are equipped with the knowledge, skills, and resources to succeed in their roles and contribute to the company's success.\",\n      \"OnboardingDuration\": \"90 days\",\n      \"OnboardingProcess\": [\n        \"Pre-boarding: Welcome email, company information, required paperwork.\",\n        \"Day 1: Company overview, HR policies, introductions to team members, safety training overview.\",\n        \"Week 1: Role-specific training, systems access, mentorship assignment.\",\n        \"Month 1: Performance expectations, goal setting, feedback sessions.\",\n        \"Month 3: Performance review, training needs assessment.\"\n      ],\n      \"ToolsPlatforms\": [\n        \"Learning Management System (LMS): TalentLMS\",\n        \"Online training modules: SafetyCulture, Procore\",\n        \"Company intranet: SharePoint\",\n        \"Mentorship program platform: Together Software\"\n      ],\n      \"MentorshipProgram\": {\n        \"Description\": \"New employees are paired with experienced mentors who provide guidance, support, and advice during their first few months at the company.\",\n        \"Goals\": [\n          \"Increase employee engagement and retention.\",\n          \"Accelerate employee learning and development.\",\n          \"Foster a culture of collaboration and knowledge sharing.\"\n        ],\n        \"MatchingCriteria\": [\n          \"Role similarity\",\n          \"Experience level\",\n          \"Personal interests\"\n        ],\n\t\t\"MentorshipDuration\":\"6 months\"\n      ],\n      \"TrainingPrograms\": [\n        \"Safety Training (OSHA 10/30, fall protection, confined space entry)\",\n        \"Technical Skills Training (blueprint reading, construction methods, equipment operation)\",\n        \"Leadership Development Training\",\n        \"Software Training (Procore, AutoCAD, BIM)\",\n        \"Communication Skills Training\",\n        \"Diversity & Inclusion Training\"\n      ],\n      \"KPIs\": [\n        \"Employee satisfaction with onboarding process (target: >80% positive feedback)\",\n        \"Time to proficiency (target: reduce by 15% annually)\",\n        \"Completion rate of training programs (target: >95%)\",\n        \"Retention rate of new hires (target: >90% after 1 year)\"\n      ]\n    },\n    \"5. Performance Management\": {\n      \"PolicyName\": \"Performance Management Policy\",\n      \"PolicyStatement\": \"Stonewall Builders Inc. is committed to providing employees with regular feedback, coaching, and opportunities for growth. Our performance management system is designed to align individual goals with company objectives and to recognize and reward high performance.\",\n      \"AppraisalFrequency\": \"Annual performance reviews with quarterly check-ins.\",\n      \"ReviewCriteria\": [\n        \"Achievement of goals and objectives\",\n        \"Quality of work\",\n        \"Productivity\",\n        \"Teamwork and collaboration\",\n        \"Communication skills\",\n        \"Problem-solving skills\",\n        \"Adherence to company policies and procedures\",\n        \"Safety performance\"\n      ],\n      \"FeedbackLoops\": [\n        \"360-degree feedback from peers, supervisors, and subordinates.\",\n        \"Regular one-on-one meetings between employees and managers.\",\n        \"Performance improvement plans (PIPs) for employees who are not meeting expectations.\",\n        \"Employee self-assessments.\",\n\t\t\"Project-based feedback\"\n      ],\n      \"PerformanceRatingScale\": [\n        \"Exceeds Expectations\",\n        \"Meets Expectations\",\n        \"Needs Improvement\"\n      ],\n      \"KPIs\": [\n        \"Employee satisfaction with performance management process (target: >75% positive feedback)\",\n        \"Percentage of employees with documented performance goals (target: 100%)\",\n        \"Percentage of employees receiving regular feedback (target: 100%)\",\n        \"Improvement in performance ratings over time\",\n        \"Correlation between performance ratings and business outcomes\"\n      ]\n    },\n    \"6. Remote/Flexible Work Policy\": {\n      \"PolicyName\": \"Remote and Flexible Work Policy\",\n      \"PolicyStatement\": \"Stonewall Builders Inc. recognizes that remote and flexible work arrangements can improve employee work-life balance and productivity. This policy outlines the guidelines for eligibility, expectations, and tools used for remote and flexible work.\",\n      \"Eligibility\": \"Primarily for office-based roles. Site supervisors and construction workers are generally not eligible due to the nature of their work. Eligibility is determined by the manager and HR based on job responsibilities and performance.\",\n      \"Expectations\": [\n        \"Maintain a professional and productive work environment at home.\",\n        \"Be available for meetings and communication during regular business hours.\",\n        \"Protect company confidential information and data.\",\n        \"Adhere to all company policies and procedures.\",\n\t\t\"Attend on-site meetings and training as required.\"\n      ],\n      \"ToolsUsed\": [\n        \"Video conferencing: Zoom, Microsoft Teams\",\n        \"Collaboration tools: Slack, Asana\",\n        \"Project management software: Procore\",\n        \"VPN access for secure network connection\"\n      ],\n      \"SubPolicies\": [\n        {\n          \"PolicyName\": \"Flexible Work Schedule Policy\",\n          \"Description\": \"Allows employees to adjust their work hours within a defined range, with manager approval. Examples: compressed workweek (4 days/week), staggered start/end times.\"\n        }\n      ],\n      \"KPIs\": [\n        \"Employee satisfaction with remote/flexible work arrangements (target: >80% positive feedback)\",\n        \"Employee productivity (track key performance indicators related to remote work)\",\n        \"Employee retention (compare retention rates of remote and non-remote employees)\",\n        \"Cost savings (e.g., reduced office space)\"\n      ]\n    },\n    \"7. Employee Wellness & Mental Health\": {\n      \"PolicyName\": \"Employee Wellness and Mental Health Policy\",\n      \"PolicyStatement\": \"Stonewall Builders Inc. is committed to promoting the health and well-being of our employees. We offer a range of programs and resources to support their physical, mental, and emotional health.\",\n      \"Initiatives\": [\n        \"Employee Assistance Program (EAP): Confidential counseling and support services.\",\n        \"Wellness program: Health risk assessments, fitness challenges, health education seminars.\",\n        \"Ergonomic assessments: On-site assessments to prevent workplace injuries.\",\n        \"Mental health awareness training: Training for managers and employees on recognizing and"
+  "generated_hr_data": {
+    "company_overview": {
+      "name": "Apex Construction Group",
+      "size": "500-1000 employees",
+      "location": "Denver, Colorado"
+    },
+    "lead_hr_contact": {
+      "name": "Maria Rodriguez",
+      "designation": "VP of Human Resources",
+      "role": "Strategic HR Leadership"
+    },
+    "recruitment_strategy": {
+      "channels": [
+        "Industry-specific job boards (e.g., ConstructionJobs.com)",
+        "LinkedIn",
+        "University partnerships (Construction Management programs)",
+        "Trade shows and career fairs",
+        "Employee referral program",
+        "Local community colleges (vocational training)"
+      ],
+      "diversity_hiring": "Actively partner with organizations promoting diversity in construction, track diversity metrics, and provide unconscious bias training to hiring managers.",
+      "tools_used": [
+        "Applicant Tracking System (ATS) - Taleo",
+        "LinkedIn Recruiter",
+        "Skill assessment platforms"
+      ]
+    },
+    "onboarding_and_training": {
+      "duration": "90-day structured onboarding program",
+      "platforms": [
+        "Online learning management system (LMS)",
+        "On-site training workshops",
+        "Safety certifications (OSHA)",
+        "Mentorship program"
+      ],
+      "mentorship_program": "Each new employee is paired with a senior employee for guidance and support during their first year."
+    },
+    "performance_management": {
+      "appraisal_frequency": "Annual performance reviews with quarterly check-ins",
+      "criteria": [
+        "Project completion rate",
+        "Safety record",
+        "Teamwork and collaboration",
+        "Adherence to company policies",
+        "Client satisfaction",
+        "Technical skills proficiency"
+      ],
+      "feedback_loops": "360-degree feedback from peers, supervisors, and subordinates; regular one-on-one meetings; project-based feedback sessions."
+    },
+    "remote_flexible_work_policy": {
+      "eligibility": "Primarily for office-based roles (e.g., project managers, estimators, administrative staff). Field roles may have limited flexibility depending on project requirements.",
+      "expectations": "Maintain consistent communication with team members, meet deadlines, attend virtual meetings, and be available during core business hours. Must have a designated workspace that meets safety and ergonomic standards.",
+      "tools_used": [
+        "Microsoft Teams",
+        "Project Management Software (Procore)",
+        "VPN for secure access",
+        "Cloud-based file sharing (SharePoint)"
+      ]
+    },
+    "employee_wellness_and_mental_health": {
+      "initiatives": [
+        "Employee Assistance Program (EAP)",
+        "Mental health awareness workshops",
+        "Stress management training",
+        "Ergonomic assessments",
+        "On-site fitness facilities or gym memberships",
+        "Financial wellness programs"
+      ],
+      "leave_policies": "Generous paid time off (PTO) policy, including sick leave and vacation time. Short-term and long-term disability insurance. Family and Medical Leave Act (FMLA) compliance.",
+      "burnout_prevention": "Encourage employees to take breaks, utilize PTO, and maintain a healthy work-life balance. Promote open communication and provide resources for stress management. Implement workload management strategies."
+    },
+    "dei": {
+      "goals": [
+        "Increase representation of underrepresented groups in all levels of the organization by 20% in 5 years.",
+        "Achieve pay equity across all roles and demographics.",
+        "Create a more inclusive and welcoming work environment for all employees."
+      ],
+      "programs": [
+        "Diversity and inclusion training for all employees.",
+        "Employee resource groups (ERGs) for various identity groups.",
+        "Partnerships with community organizations to recruit diverse talent.",
+        "Mentorship programs for underrepresented employees."
+      ],
+      "cultural_sensitivity": "Mandatory cultural sensitivity training for all employees, with a focus on understanding and respecting diverse perspectives and backgrounds. Promote inclusive language and communication practices."
+    },
+    "learning_and_development": {
+      "career_growth": "Provide clear career paths and opportunities for advancement within the company. Offer leadership development programs for high-potential employees. Support employees in pursuing professional certifications and continuing education.",
+      "upskilling": [
+        "Blueprint reading",
+        "Advanced construction techniques",
+        "Project management",
+        "Software proficiency (e.g., BIM, AutoCAD)",
+        "Leadership skills"
+      ],
+      "certifications": [
+        "OSHA certifications",
+        "Project Management Professional (PMP)",
+        "LEED certification",
+        "Specific trade certifications (e.g., welding, electrical)"
+      ]
+    },
+    "technology_in_hr": {
+      "hris_tools": [
+        "Workday",
+        "BambooHR"
+      ],
+      "analytics_platforms": [
+        "Tableau",
+        "Power BI"
+      ]
+    },
+    "employee_engagement_programs": {
+      "events": [
+        "Company picnics",
+        "Holiday parties",
+        "Team-building activities (e.g., ropes courses, escape rooms)",
+        "Volunteer opportunities",
+        "Safety week celebrations"
+      ],
+      "recognition_methods": [
+        "Employee of the month awards",
+        "Spot bonuses for outstanding performance",
+        "Years of service awards",
+        "Public acknowledgement in company newsletters and meetings",
+        "Project completion celebrations"
+      ],
+      "surveys": "Annual employee engagement survey to gauge employee satisfaction and identify areas for improvement. Pulse surveys conducted quarterly to monitor employee sentiment."
+    },
+    "legal_compliance_and_ethics": {
+      "labor_laws": [
+        "Fair Labor Standards Act (FLSA)",
+        "Occupational Safety and Health Act (OSHA)",
+        "Equal Employment Opportunity (EEO) laws",
+        "State-specific labor laws"
+      ],
+      "anti_harassment_policy": "Zero-tolerance policy for harassment of any kind. Clear reporting procedures and prompt investigation of all complaints. Mandatory anti-harassment training for all employees.",
+      "grievance_redressal": "Formal grievance procedure for employees to address workplace concerns. Mediation and arbitration options available. Protection against retaliation for reporting grievances."
+    },
+    "compensation_and_benefits": {
+      "pay_bands": "Competitive pay bands based on experience, skills, and job responsibilities. Regular salary reviews to ensure market competitiveness.",
+      "bonus_structure": "Performance-based bonuses tied to individual and company goals. Profit-sharing program for eligible employees.",
+      "perks": [
+        "Health insurance (medical, dental, vision)",
+        "401(k) retirement plan with company match",
+        "Paid time off (PTO)",
+        "Life insurance",
+        "Disability insurance",
+        "Employee assistance program (EAP)",
+        "Tuition reimbursement",
+        "Company vehicle or vehicle allowance (for certain roles)",
+        "Safety equipment allowance"
+      ]
+    },
+    "metrics_and_kpis": {
+      "attrition_rate": "Target annual attrition rate of less than 10%.",
+      "offer_acceptance_rate": "Target offer acceptance rate of 90% or higher.",
+      "engagement_score": "Target employee engagement score of 4.0 or higher (on a scale of 1 to 5)."
+    },
+    "sector_specific_challenges_and_solutions": "Challenge: High rates of workplace injuries. Solution: Implement comprehensive safety training programs, conduct regular safety audits, and provide employees with proper safety equipment. Challenge: Labor shortages. Solution: Invest in employee training and development, offer competitive wages and benefits, and recruit from diverse talent pools. Challenge: Project delays due to supply chain disruptions. Solution: Implement proactive supply chain management strategies, diversify suppliers, and maintain open communication with clients."
+  }
 }

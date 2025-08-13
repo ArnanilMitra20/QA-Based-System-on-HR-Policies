@@ -3,9 +3,10 @@ import requests
 import json
 import time
 import random
+import re
 
 # --- API Config ---
-API_KEY = "AIzaSyBNQZNrz_0Pacf8vfaH_DSMFMTPuDa1VI8"
+API_KEY = "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA"  # <-- Replace with your own key
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
 
 # --- Output Folder ---
@@ -20,71 +21,129 @@ sectors_list = [
     "Aerospace", "Agriculture", "Construction", "Entertainment", "NGO and Nonprofit"
 ]
 
-# --- Main Function ---
+def clean_json_text(raw_text: str) -> str:
+    """
+    Removes markdown code fences and trims extra spaces so we can parse JSON safely.
+    """
+    cleaned = re.sub(r"^```json\s*", "", raw_text.strip(), flags=re.IGNORECASE)
+    cleaned = re.sub(r"^```", "", cleaned)
+    cleaned = re.sub(r"```$", "", cleaned)
+    return cleaned.strip()
+
 def generate_sectorwise_hr_data(sectors, sleep_between=2, max_retries=5):
     headers = {"Content-Type": "application/json"}
 
     for sector in sectors:
         print(f"\n📁 Generating HR policy data for sector: {sector}")
 
-        full_prompt = (
-            f"Generate a very detailed and comprehensive HR policy and practices document for a company in the {sector} sector.\n"
-            f"Include the following sections with examples, measurable KPIs, and sub-policies wherever applicable:\n\n"
-            f"1. Company Overview (fictitious name, size, location)\n"
-            f"2. Lead HR Contact (name, designation, role)\n"
-            f"3. Recruitment Strategy\n"
-            f"   - Channels used, diversity hiring, tech tools used\n"
-            f"4. Onboarding & Training\n"
-            f"   - Duration, tools/platforms, mentorship\n"
-            f"5. Performance Management\n"
-            f"   - Appraisal frequency, review criteria, feedback loops\n"
-            f"6. Remote/Flexible Work Policy\n"
-            f"   - Eligibility, expectations, tools used\n"
-            f"7. Employee Wellness & Mental Health\n"
-            f"   - Initiatives, leave policies, burnout prevention\n"
-            f"8. Diversity, Equity & Inclusion (DEI)\n"
-            f"   - Goals, programs, cultural sensitivity\n"
-            f"9. Learning & Development\n"
-            f"   - Career growth, upskilling, certifications\n"
-            f"10. Use of Technology in HR\n"
-            f"    - HRIS tools, analytics platforms\n"
-            f"11. Employee Engagement Programs\n"
-            f"    - Events, recognition, surveys\n"
-            f"12. Legal Compliance & Ethics\n"
-            f"    - Labor laws, anti-harassment, grievance redressal\n"
-            f"13. Compensation & Benefits\n"
-            f"    - Pay bands, bonus structure, perks\n"
-            f"14. Metrics & KPIs\n"
-            f"    - Attrition rate, offer acceptance rate, engagement score\n"
-            f"15. Challenges & Solutions specific to the {sector} sector\n\n"
-            f"Format the response as a structured JSON object with proper section headers."
-        )
+        # Explicit strict JSON schema instruction
+        full_prompt = f"""
+You are a JSON-only generator.  
+Your task is to output *only* valid JSON — no explanations, no markdown code fences, no extra text.  
+
+You must strictly follow this schema, filling all fields with detailed and realistic HR policies for a company in the "{sector}" sector:
+
+{{
+  "company_overview": {{
+    "name": "string",
+    "size": "string",
+    "location": "string"
+  }},
+  "lead_hr_contact": {{
+    "name": "string",
+    "designation": "string",
+    "role": "string"
+  }},
+  "recruitment_strategy": {{
+    "channels": ["string"],
+    "diversity_hiring": "string",
+    "tools_used": ["string"]
+  }},
+  "onboarding_and_training": {{
+    "duration": "string",
+    "platforms": ["string"],
+    "mentorship_program": "string"
+  }},
+  "performance_management": {{
+    "appraisal_frequency": "string",
+    "criteria": ["string"],
+    "feedback_loops": "string"
+  }},
+  "remote_flexible_work_policy": {{
+    "eligibility": "string",
+    "expectations": "string",
+    "tools_used": ["string"]
+  }},
+  "employee_wellness_and_mental_health": {{
+    "initiatives": ["string"],
+    "leave_policies": "string",
+    "burnout_prevention": "string"
+  }},
+  "dei": {{
+    "goals": ["string"],
+    "programs": ["string"],
+    "cultural_sensitivity": "string"
+  }},
+  "learning_and_development": {{
+    "career_growth": "string",
+    "upskilling": ["string"],
+    "certifications": ["string"]
+  }},
+  "technology_in_hr": {{
+    "hris_tools": ["string"],
+    "analytics_platforms": ["string"]
+  }},
+  "employee_engagement_programs": {{
+    "events": ["string"],
+    "recognition_methods": ["string"],
+    "surveys": "string"
+  }},
+  "legal_compliance_and_ethics": {{
+    "labor_laws": ["string"],
+    "anti_harassment_policy": "string",
+    "grievance_redressal": "string"
+  }},
+  "compensation_and_benefits": {{
+    "pay_bands": "string",
+    "bonus_structure": "string",
+    "perks": ["string"]
+  }},
+  "metrics_and_kpis": {{
+    "attrition_rate": "string",
+    "offer_acceptance_rate": "string",
+    "engagement_score": "string"
+  }},
+  "sector_specific_challenges_and_solutions": "string"
+}}
+
+Rules:
+1. Do NOT include triple backticks or markdown formatting.
+2. Do NOT add explanations or comments — only output the JSON object above.
+3. Ensure the JSON is syntactically valid and matches the schema exactly.
+"""
+
 
         payload = {
-            "contents": [
-                {
-                    "parts": [{"text": full_prompt}]
-                }
-            ],
+            "contents": [{"parts": [{"text": full_prompt.strip()}]}],
             "generationConfig": {
                 "temperature": 0.9,
-                "maxOutputTokens": 2048  # Increase for more detailed output
+                "maxOutputTokens": 2048
             }
         }
 
         retries = 0
+        text = ""
         while retries < max_retries:
             try:
                 response = requests.post(API_URL, headers=headers, json=payload, timeout=30)
                 response.raise_for_status()
                 result = response.json()
 
-                text = ""
                 for part in result.get("candidates", [])[0].get("content", {}).get("parts", []):
                     if "text" in part:
                         text += part["text"] + "\n"
 
-                if not text:
+                if not text.strip():
                     text = "No content returned."
                 break
 
@@ -105,16 +164,25 @@ def generate_sectorwise_hr_data(sectors, sleep_between=2, max_retries=5):
         else:
             text = f"ERROR: Max retries exceeded for sector {sector}"
 
-        # Save the output
+        # --- Clean & Parse JSON ---
+        parsed_data = None
+        try:
+            cleaned_text = clean_json_text(text)
+            parsed_data = json.loads(cleaned_text)
+        except json.JSONDecodeError:
+            print(f"⚠️ Warning: Output for {sector} is not valid JSON, saving as plain text.")
+
+        # --- Save to file ---
         filepath = os.path.join(OUTPUT_DIR, f"{sector}.json")
         with open(filepath, "w", encoding="utf-8") as f:
-            json.dump({"sector": sector, "hr_policy_data": text.strip()}, f, indent=2, ensure_ascii=False)
+            if parsed_data:
+                json.dump({"sector": sector, "generated_hr_data": parsed_data}, f, indent=2, ensure_ascii=False)
+            else:
+                json.dump({"sector": sector, "generated_hr_data": text.strip()}, f, indent=2, ensure_ascii=False)
 
         print(f"✅ Saved detailed HR policy for {sector} sector to {filepath}")
         time.sleep(sleep_between + random.uniform(0, 1))
 
-
-# --- Run It ---
 if __name__ == "__main__":
     generate_sectorwise_hr_data(sectors_list)
     print("\n🎉 All extended sector HR policy files saved in 'generated_hr_data/'")
