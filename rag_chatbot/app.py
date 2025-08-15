@@ -1,55 +1,86 @@
-import streamlit as st
-from langchain.vectorstores import Chroma
-from langchain.embeddings import HuggingFaceEmbeddings
-import google.generativeai as genai
+import asyncio
 import os
-from dotenv import load_dotenv
+import streamlit as st
+from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_community.vectorstores import FAISS
 
-# --- Load Environment Variables ---
-load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# -------------------
+# API Key Config
+# -------------------
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA")
 
-# --- Gemini Model ---
-model = genai.GenerativeModel("gemini-2.0-flash")
+# -------------------
+# Automatically detect all sector FAISS indexes
+# -------------------
+SECTOR_INDEX_PATHS = {
+    path.replace("vector_store_", ""): path
+    for path in os.listdir()
+    if path.startswith("vector_store_")
+}
 
-def gemini_answer(context, question):
-    prompt = f"""
-You are an HR expert assistant. Use ONLY the following context from HR policies to answer the question accurately. 
-Provide an estimated answer if you do not find it in the documents.
+@st.cache_resource
+def load_vector_store(path: str):
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
 
--------------------
-{context}
--------------------
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/embedding-001",
+        google_api_key=GOOGLE_API_KEY
+    )
+    return FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
 
-Question: {question}
-Answer:
-"""
-    response = model.generate_content(prompt)
-    return response.text.strip()
+# Load all sector vector stores
+vector_stores = {sector: load_vector_store(path) for sector, path in SECTOR_INDEX_PATHS.items()}
 
-# --- Vector DB Setup ---
-embedding = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-db = Chroma(persist_directory="vector_db", embedding_function=embedding)
-retriever = db.as_retriever(search_kwargs={"k": 3})
+# -------------------
+# Load Gemini Model
+# -------------------
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    temperature=0.2,
+    google_api_key=GOOGLE_API_KEY
+)
 
-# --- Streamlit UI ---
-st.set_page_config(page_title="HR RAG Chatbot (Gemini)", layout="wide")
-st.title("🤖 HR RAG Chatbot (Gemini + Vector DB)")
-st.write("Ask me anything about HR policies across various sectors. I’ll answer using the policy data we've indexed.")
+# -------------------
+# Streamlit UI
+# -------------------
+st.set_page_config(page_title="HR RAG Chatbot", page_icon="💬", layout="centered")
+st.title("💬 HR Policy Assistant (Multi-Sector)")
+st.caption("Ask any HR policy question. Answers are grounded in the sector-specific knowledge base.")
 
-query = st.text_input("🔎 Ask your question:")
+query = st.text_input("🔍 Enter your question:")
 
 if query:
-    with st.spinner("🔍 Retrieving relevant HR policy documents..."):
-        docs = retriever.get_relevant_documents(query)
-        context = "\n\n".join([doc.page_content for doc in docs])
+    with st.spinner("🔎 Searching relevant sectors..."):
+        # Detect sectors in query
+        selected_sectors = [s for s in SECTOR_INDEX_PATHS if s.lower() in query.lower()]
+        if not selected_sectors:
+            selected_sectors = list(SECTOR_INDEX_PATHS.keys())
 
-        answer = gemini_answer(context, query)
+        docs = []
+        for sector in selected_sectors:
+            docs.extend(vector_stores[sector].similarity_search(query, k=3))
 
-        st.markdown("### ✅ Answer")
-        st.markdown(answer)
+        context = "\n\n".join([f"[{doc.metadata.get('sector', 'Unknown')}] {doc.page_content}" for doc in docs])
 
-        st.markdown("---")
-        with st.expander("📄 Sources Used (Top 3 Documents)"):
-            for i, doc in enumerate(docs):
-                st.markdown(f"**Source {i+1}:**\n```\n{doc.page_content[:800]}...\n```")
+        prompt = f"""
+You are an HR Policy Expert. Use ONLY the information from the provided context to answer.
+If the answer is not in the context, say "I couldn't find that in the HR policy knowledge base."
+
+Answer in a clear, concise, and well-structured manner.
+Use bullet points or numbered lists when possible.
+
+Context:
+{context}
+
+Question: {query}
+
+Answer:
+"""
+        response = llm.predict(prompt)
+
+    st.markdown("### 📝 Answer")
+    st.write(response)
