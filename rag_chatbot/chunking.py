@@ -4,10 +4,12 @@ from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
+from dotenv import load_dotenv
+load_dotenv()
 
 # --- CONFIG ---
 FOLDER_PATH = "generated_hr_data"  # Folder with sector JSON files
-GOOGLE_API_KEY = "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA"
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 

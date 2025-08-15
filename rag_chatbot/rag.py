@@ -2,13 +2,13 @@ import os
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain.chains import RetrievalQA
-
+from dotenv import load_dotenv
+load_dotenv()
 # --- CONFIG ---
 FAISS_INDEX_PATH = "vector_store"  # Path to saved FAISS index
-GOOGLE_API_KEY = "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA"
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Set API key for LangChain
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 def load_vector_store(path):
     print(f"📂 Loading FAISS index from '{path}'...")

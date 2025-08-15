@@ -3,11 +3,13 @@ import os
 import streamlit as st
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
+from dotenv import load_dotenv
+load_dotenv()
 
 # -------------------
 # API Key Config
-# -------------------
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA")
+# -------------------A
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # -------------------
 # Automatically detect all sector FAISS indexes

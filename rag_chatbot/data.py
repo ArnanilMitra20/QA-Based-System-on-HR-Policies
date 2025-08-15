@@ -4,9 +4,11 @@ import json
 import time
 import random
 import re
+from dotenv import load_dotenv
+load_dotenv()
 
 # --- API Config ---
-API_KEY = "AIzaSyDCNh2JK9WOePuq4EXKs9F33hVXvfnmRCA"  # <-- Replace with your own key
+API_KEY = os.getenv("GOOGLE_API_KEY")  # <-- Replace with your own key
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
 
 # --- Output Folder ---
