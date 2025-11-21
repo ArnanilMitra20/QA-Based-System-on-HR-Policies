@@ -6,14 +6,10 @@ from langchain_community.vectorstores import FAISS
 from dotenv import load_dotenv
 load_dotenv()
 
-# -------------------
-# API Key Config
-# -------------------A
+
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
-# -------------------
-# Automatically detect all sector FAISS indexes
-# -------------------
+
 SECTOR_INDEX_PATHS = {
     path.replace("vector_store_", ""): path
     for path in os.listdir()
@@ -34,21 +30,17 @@ def load_vector_store(path: str):
     )
     return FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
 
-# Load all sector vector stores
+
 vector_stores = {sector: load_vector_store(path) for sector, path in SECTOR_INDEX_PATHS.items()}
 
-# -------------------
-# Load Gemini Model
-# -------------------
+
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
     temperature=0.2,
     google_api_key=GOOGLE_API_KEY
 )
 
-# -------------------
-# Streamlit UI
-# -------------------
+
 st.set_page_config(page_title="HR RAG Chatbot", page_icon="💬", layout="centered")
 st.title("💬 HR Policy Assistant (Multi-Sector)")
 st.caption("Ask any HR policy question. Answers are grounded in the sector-specific knowledge base.")
@@ -57,7 +49,7 @@ query = st.text_input("🔍 Enter your question:")
 
 if query:
     with st.spinner("🔎 Searching relevant sectors..."):
-        # Detect sectors in query
+        
         selected_sectors = [s for s in SECTOR_INDEX_PATHS if s.lower() in query.lower()]
         if not selected_sectors:
             selected_sectors = list(SECTOR_INDEX_PATHS.keys())

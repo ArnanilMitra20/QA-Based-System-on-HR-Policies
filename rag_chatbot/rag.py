@@ -4,14 +4,14 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 load_dotenv()
-# --- CONFIG ---
-FAISS_INDEX_PATH = "vector_store"  # Path to saved FAISS index
+
+FAISS_INDEX_PATH = "vector_store"  
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# Set API key for LangChain
+
 
 def load_vector_store(path):
-    print(f"📂 Loading FAISS index from '{path}'...")
+    print(f" Loading FAISS index from '{path}'...")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
     return FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
 
@@ -25,14 +25,14 @@ def main():
     vector_store = load_vector_store(FAISS_INDEX_PATH)
     qa_chain = create_qa_chain(vector_store)
 
-    print("\n💬 RAG Chatbot is ready! Type 'exit' to quit.")
+    print("\nRAG Chatbot is ready! Type 'exit' to quit.")
     while True:
-        query = input("\n❓ Enter your question: ")
+        query = input("\n Enter your question: ")
         if query.lower() in ["exit", "quit"]:
-            print("👋 Goodbye!")
+            print(" Goodbye!")
             break
         answer = qa_chain.run(query)
-        print(f"\n📝 Answer: {answer}")
+        print(f"\n Answer: {answer}")
 
 if __name__ == "__main__":
     main()

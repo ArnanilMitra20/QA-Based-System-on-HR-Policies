@@ -7,8 +7,8 @@ from langchain.docstore.document import Document
 from dotenv import load_dotenv
 load_dotenv()
 
-# --- CONFIG ---
-FOLDER_PATH = "generated_hr_data"  # Folder with sector JSON files
+
+FOLDER_PATH = "generated_hr_data"  
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
@@ -43,7 +43,7 @@ def chunk_and_save_sector(sector_name, data):
 
     save_path = f"vector_store_{sector_name}"
     vector_store.save_local(save_path)
-    print(f"✅ Saved FAISS index for {sector_name} to '{save_path}'")
+    print(f" Saved FAISS index for {sector_name} to '{save_path}'")
 
 def main():
     for filename in os.listdir(FOLDER_PATH):
@@ -55,7 +55,7 @@ def main():
                 sector_name = os.path.splitext(filename)[0]
                 chunk_and_save_sector(sector_name, data)
             except Exception as e:
-                print(f"❌ Error processing {filename}: {e}")
+                print(f" Error processing {filename}: {e}")
 
 if __name__ == "__main__":
     main()

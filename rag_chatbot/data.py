@@ -36,7 +36,7 @@ def generate_sectorwise_hr_data(sectors, sleep_between=2, max_retries=5):
     headers = {"Content-Type": "application/json"}
 
     for sector in sectors:
-        print(f"\n📁 Generating HR policy data for sector: {sector}")
+        print(f"\n Generating HR policy data for sector: {sector}")
 
         # Explicit strict JSON schema instruction
         full_prompt = f"""
